@@ -1,0 +1,27 @@
+[package]
+name = "rust_ws"
+version = "0.1.0"
+edition = "2021"
+
+# optional
+[[bin]]
+name = "rust_ws"
+path = "src/main.rs"
+
+[[bin]]
+name = "helper"
+path = "src/bin/helper.rs"
+
+[[bin]]
+name = "main2"
+path = "src/bin/main2.rs"
+
+# guessing_game
+[[bin]]
+name = "guessing_game"
+path = "src/bin/guessing_game.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8.3"
