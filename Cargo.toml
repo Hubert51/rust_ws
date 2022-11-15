@@ -21,6 +21,16 @@ path = "src/bin/main2.rs"
 name = "guessing_game"
 path = "src/bin/guessing_game.rs"
 
+# variables
+[[bin]]
+name = "variables"
+path = "src/bin/variables.rs"
+
+# compound types
+[[bin]]
+name = "compound_types"
+path = "src/bin/compound_types.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]

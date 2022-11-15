@@ -44,6 +44,52 @@ https://doc.rust-lang.org/cargo/guide/project-layout.html
         └── test_module.rs
 ```
 
-## documentation
+## Documentation
 generate documentation in current project
 `cargo doc --open`
+
+## General concept:
+### Variable and Mutability
+* variables:
+  * by default, it is immutable
+* constant 
+  * always immutable 
+  * constant expression 
+  * need with type 
+  * all uppercase with underscores between words.
+    * `THREE_HOURS_IN_SECONDS`
+  * Constant are valid for the entire time a program runs.
+* Shadowing:
+  * reuse the variable name and can change the type. if use `mut`, cannot change the type
+
+### Data Types
+* scalar types:
+  * integers
+  * float-point
+  * Booleans
+  * characters
+    * single quote for char
+* Compound types:
+  * tuples:
+    * fixed length, can assign type one by one
+    * using a period(.) followed by index of vaLUE WE want to access
+  * Array:
+    * use `{:?}`: to print each element in the array
+    * can declear [type; length] or [value; length]
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
