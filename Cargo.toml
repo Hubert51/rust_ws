@@ -24,13 +24,22 @@ path = "src/bin/guessing_game.rs"
 # variables
 [[bin]]
 name = "variables"
-path = "src/bin/variables.rs"
+path = "src/bin/3_1_variables.rs"
 
 # compound types
 [[bin]]
 name = "compound_types"
-path = "src/bin/compound_types.rs"
+path = "src/bin/3_2_compound_types.rs"
 
+# functions
+[[bin]]
+name = "functions"
+path = "src/bin/3_3_functions.rs"
+
+# Control Flow
+[[bin]]
+name = "control_flow"
+path = "src/bin/3_4_control_flow.rs"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]

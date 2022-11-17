@@ -44,6 +44,10 @@ https://doc.rust-lang.org/cargo/guide/project-layout.html
         └── test_module.rs
 ```
 
+## Learning Material
+* [too many list](https://rust-unofficial.github.io/too-many-lists/)
+* 
+
 ## Documentation
 generate documentation in current project
 `cargo doc --open`
@@ -77,7 +81,30 @@ generate documentation in current project
     * use `{:?}`: to print each element in the array
     * can declear [type; length] or [value; length]
     
+### function
+* statement and expression
+  * statement: instructions that perform some action and o not return a value
+    * `let x = 6`
+    * Wrong: `let x = (let y = 6)`
+    * Correct in C++: `x = y = 6`
+  * expression: evaluate to a resulting value
+  * `let y = 6`:
+    * `6` is expression
+    * `let y = 6` is a statement
+  * a new scope block created with curly brackets is an expression
+    * ```
+      let y = {
+          let x = 3;
+          x + 1
+      };
+      ```
+      
+### Control Flow
+* loop label:
+  * to break different loop, we can use loop label
 
+## Ownership:
+* most unique feature, enable rust to make memory safety guarantees without garbage collector
 
 
 
