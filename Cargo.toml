@@ -40,6 +40,12 @@ path = "src/bin/3_3_functions.rs"
 [[bin]]
 name = "control_flow"
 path = "src/bin/3_4_control_flow.rs"
+
+# Ownership
+[[bin]]
+name = "ownership"
+path = "src/bin/4_1_ownership.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]

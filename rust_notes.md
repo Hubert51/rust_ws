@@ -105,11 +105,17 @@ generate documentation in current project
 
 ## Ownership:
 * most unique feature, enable rust to make memory safety guarantees without garbage collector
-
-
-
-
-
+* manage heap data
+### Ownership rules:
+* each value in Rust has an owner
+* There can only be one owner at a time
+* When the owner goes out of scope, the value will be dropped (calls drop automatically at the closing curly bracket)
+* in C++, has a similar mechism called Resource Acquisition Is Initialization(RAII)
+* when copy the pointer, the first pointer is not valid anymore. 
+  * similar as move, not shallow copy
+* Use clone to do deep copy
+* `Copy` trait: for type stored on the stack. If the type has `Drop`, will not have `Copy` trait
+* we can also let a function use a value but not take ownership, using tuple for return value
 
 
 
