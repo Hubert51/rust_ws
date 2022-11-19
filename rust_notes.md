@@ -117,7 +117,15 @@ generate documentation in current project
 * `Copy` trait: for type stored on the stack. If the type has `Drop`, will not have `Copy` trait
 * we can also let a function use a value but not take ownership, using tuple for return value
 
-
+### reference
+* mutable reference: `let r1 = &mut s`
+  * borrow to another variable
+* unmutable: `let r2 = &r0`
+  * can be assigned to many variable since they are reading
+* If we first borrow to immutable variable. Then we still can give to mutable variable. But the 
+previous immutable variable cannot be used anymore
+#### **slice type**
+* reference, does not have ownership. 
 
 
 
