@@ -46,6 +46,11 @@ path = "src/bin/3_4_control_flow.rs"
 name = "ownership"
 path = "src/bin/4_1_ownership.rs"
 
+# struct
+[[bin]]
+name = "struct"
+path = "src/bin/5_1_struct.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]

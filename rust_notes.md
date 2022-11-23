@@ -128,6 +128,28 @@ previous immutable variable cannot be used anymore
 * reference, does not have ownership. 
 
 
+## Structure:
+* struct
+* tuple-like
+* unit-like
+
+Ownership of struct data:
+* using String instead of &str
+* we can give keyword `lifetimes`, to make referenced data has same lifetime as struct.
+
+* {:?}  debug foramt to print everything in the struct
+  * need to add attribute before struct: #[derive(Debug)]
+* `dbg!(30 * scale)`: print in stderr, show us what does the code do. 
+  * do not need to call print function to print the value
+  * take the ownership of an expression and return the ownership back
+  * on the other side, println! takes a reference
+
+## Traits:
+* dbg!
+* println!
+
+
+
 
 
   
